@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Login - Wayne Security</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <main class="login">
+    <h1>Wayne Security</h1>
+    {% if error %}
+      <div class="error">{{ error }}</div>
+    {% endif %}
+    <form method="post" action="/login">
+      <label>Usuário: <input name="username" required></label><br>
+      <label>Senha: <input name="password" type="password" required></label><br>
+      <button type="submit">Entrar</button>
+    </form>
+  </main>
+</body>
+</html>

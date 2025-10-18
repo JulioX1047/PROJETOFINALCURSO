@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Wayne Security - Dashboard</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Indústrias Wayne - Segurança</h1>
+    <nav id="nav-user"></nav>
+  </header>
+  <main>
+    <section id="stats">
+      <h2>Dashboard</h2>
+      <div id="stats-content">Carregando...</div>
+    </section>
+
+    <section id="resources">
+      <h2>Recursos</h2>
+      <div id="resources-list">Carregando...</div>
+      <div id="resource-form" style="display:none;">
+        <h3>Adicionar/Editar recurso</h3>
+        <form id="form-resource">
+          <input name="id" type="hidden">
+          <label>Nome: <input name="name"></label><br>
+          <label>Tipo: <input name="type"></label><br>
+          <label>Local: <input name="location"></label><br>
+          <label>Status: <input name="status"></label><br>
+          <label>Notas: <textarea name="notes"></textarea></label><br>
+          <button type="submit">Salvar</button>
+          <button type="button" id="cancel-edit">Cancelar</button>
+        </form>
+      </div>
+      <button id="btn-add">Adicionar Recurso</button>
+    </section>
+  </main>
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
